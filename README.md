@@ -18,7 +18,7 @@ L'architecture repose sur les principaux services AWS suivants :
 
 ### 2.2 Diagramme d'architecture
 
-diamgrame 
+![Schéma de l'infrastructure](shema.png)
 
 ## 3. Composants de l'infrastructure
 
