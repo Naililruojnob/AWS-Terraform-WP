@@ -1,7 +1,3 @@
-Pour créer un Document d'Architecture Technique (DAT) détaillé pour votre projet Terraform AWS, vous pouvez suivre cette structure. Ce document servira à fournir une vue d'ensemble claire de l'architecture technique, des composants principaux, des décisions architecturales et des détails de sécurité. Voici un exemple de structure que vous pouvez suivre :
-
----
-
 # Document d'Architecture Technique
 
 ## 1. Introduction
