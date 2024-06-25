@@ -33,10 +33,10 @@ sudo chown -R www-data:www-data /var/www/html
 sudo chmod -R 755 /var/www/html
 
 sudo echo "<?php
-define('DB_NAME', "${db_name}");
-define('DB_USER', "${db_username}");
-define('DB_PASSWORD', "${db_password}");
-define('DB_HOST', "${db_host}");
+define('DB_NAME', '"${db_name}"');
+define('DB_USER', '"${db_username}"');
+define('DB_PASSWORD', '"${db_password}"');
+define('DB_HOST', '"${db_host}"');
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 \$table_prefix  = 'wp_';
