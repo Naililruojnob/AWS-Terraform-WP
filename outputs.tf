@@ -25,7 +25,7 @@ output "web_instance_id" {
 
 output "alb_id" {
   description = "L'ID de l'Application Load Balancer"
-  value       = aws_alb.example.id
+  value       = aws_alb.alb-lb.id
 }
 
 output "db_instance_id" {

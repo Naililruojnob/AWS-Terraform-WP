@@ -19,3 +19,8 @@ resource "aws_instance" "web" {
     Name = "LB-WordPress-Instance"
   }
 }
+resource "aws_alb_target_group_attachment" "web" {
+  target_group_arn = aws_alb_target_group.tg.arn
+  target_id        = aws_instance.web.id
+  port             = 80
+}
