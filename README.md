@@ -60,9 +60,3 @@ diamgrame
 - Mise en œuvre de mises à jour régulières.
 - Surveillance des journaux et des alertes de sécurité.
 - Sécurisation des données sensibles dans la configuration et le stockage.
-
-## 5. Gestion des coûts
-
-### 5.1 Optimisation des ressources
-- Utilisation d'instances de type adapté aux besoins de charge de travail.
-- Planification et prévision des coûts opérationnels liés aux services AWS utilisés.
