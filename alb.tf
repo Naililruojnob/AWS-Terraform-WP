@@ -1,6 +1,6 @@
 resource "aws_alb" "alb-lb" {
   name               = "LB-alb"
-  security_groups    = [aws_security_group.web_sg.id]
+  security_groups    = [aws_security_group.alb_sg.id]  
   subnets            = [for s in aws_subnet.subnet : s.id]
   enable_deletion_protection = false
 
@@ -10,7 +10,7 @@ resource "aws_alb" "alb-lb" {
 }
 
 resource "aws_alb_target_group" "tg" {
-  name     = "tg-wp"
+  name     = "lb-tg-wp"
   port     = 80
   protocol = "HTTP"
   vpc_id   = aws_vpc.main.id
@@ -25,7 +25,7 @@ resource "aws_alb_target_group" "tg" {
   }
 
   tags = {
-    Name = "tg-wp"
+    Name = "LB-tg-wp"
   }
 }
 

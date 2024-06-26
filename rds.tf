@@ -1,4 +1,5 @@
 resource "aws_db_instance" "default" {
+  storage_encrypted      = true
   allocated_storage      = var.db_allocated_storage
   storage_type           = "gp2"
   engine                 = var.db_engine
@@ -17,7 +18,7 @@ resource "aws_db_instance" "default" {
 }
 
 resource "aws_db_subnet_group" "default" {
-  name       = "main"
+  name       = "lb-main"
   subnet_ids = [for s in aws_subnet.subnet : s.id]
 
   tags = {
